@@ -1,25 +1,19 @@
-# Project 1 - Real-State-Service Tracker
+# Project 1 - Brewery locator and rating service website
 ​
 ​
 ## Project Summary
-​  The purpose of this application is to create a website that cmpiles real state services nearby to anyone with diabilities , older that might have troubles to get real state information and services all togheter in a easy way.
-This application will solve the need for selected audience to compile the real state and professionals service information using a Zip code. 
-Use will 
-
-Target audience older generation  finding real state services nearby.
-   Search profesional services (Real state agents)
-   Location selection.
-   Define search criteria
+​  The purpose of this application is to create a website that pull data from different breweries options, location and rating from other customers. 
+Helps people that are interested in breweries to find mulltiple options based on their type of beer, location and be able to see the rating.
+Target audience are beer enthusiast, this application will request initial input from user to identify their preferences and the location.
    ...
 ​
 ## Developers
 ​
 1 Anson Hendrick
-​
 2 Reno Raju
-​
 3 Mauricio Gomez
-​
+
+
 ## Installation Instructions
 ​
 - Clone our repo to your computer
