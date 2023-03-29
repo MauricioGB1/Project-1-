@@ -39,15 +39,17 @@ Target audience are beer enthusiast, this application will request initial input
 ​  -   Open Brewery DB https://www.openbrewerydb.org/  (Open Brewery DB is a free dataset and API with public information on breweries, cideries, brewpubs, and bottleshops)
 -   Google Maps: https://developers.google.com/maps/
 -   Yelp: https://www.yelp.com/developers 
--
+-   Google Reviews: The Google My Business API 
 ​
 ## MVP (Minimum Viable Product)
-​  Website that present all information together
-Beer Create search option criteria based on Zip code,
+​  Website that present all information together: 
+Brewery selection based on a search option criteria key beer preferences and prvide location using Zip code,
+Application will provide Brewery location, website, type of brewery and reviews.
 
-Professional Services options- Real State agent, Financial etc., type property (House. commercial, sell, buy , lease).
-Based on selection criteria pull all data and present it visually organized and easily compilled.
 ​
 ​
 ## Stretch Goals
-​
+-  Display Pictures
+-  Display Web-site page for selected brewery
+
+
