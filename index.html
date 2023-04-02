@@ -1,70 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Git it Done</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Brewery Locator- Team 6</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <div class="clearfix">
+        
+      <a id="logo-container" href="./images/logo.png" class="brand-logo">Brewery Locator App</a>
+        <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-<body class="flex-column min-100-vh">
-  <header class="hero">
-    <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
-    <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
-    </p>
-  </header>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search By User</h3>
-        <form id="user-form" class="card-body">
-          <label class="form-label" for="username">Username</label>
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Get User</button>
-        </form>
-      </div>
-
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search By Topic</h3>
-        <div id="language-buttons" class="card-body">
-          <button data-language="javascript" class="btn">JavaScript</button>
-          <button data-language="html" class="btn">HTML</button>
-          <button data-language="css" class="btn">CSS</button>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Brewery Locator and Rating Service</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
+        <div class="row center">
+          <a href="https://www.1840brewing.com/" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Menu Selector</a>
+        </div>
+        <br><br>
+
       </div>
     </div>
+    <div class="parallax"><img src="./assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+  
+<body>
 
-    <div class="col-12 col-md-8">
-      <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
-      <div id="repos-container" class="list-group"></div>
+<!-- User Input Section  Start--> 
+<section class="input-section"> 
+<!-- Brewery Typew:  Input Select Structure Start--> 
+  <div id="leftbox">
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Brewery Type</a>
+    <label></label>
+    <select class="browser-default">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Micro-brewery</option>
+      <option value="2">Nano-brewery</option>
+      <option value="3">Regional-brewery</option>
+      <option value="4">Brewpub</option>
+      <option value="5">Large-brewery</option>
+      <option value="6">Planning-brewery</option>
+      <option value="7">Bar</option>
+      <option value="8">Contract-brewery</option>
+      <option value="9">Proprietor-brewery</option>
+      <option value="10">Closed-brewery</option>
+    </select>
     </div>
-  </main>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-          <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+    <!-- Input Select Structure Finish -->
+
+  <!-- Brewery Typew:  Input Select Structure Start--> 
+  <div id="middlebox">
+    <a class='dropdown-trigger btn' >Customer Recommendation</a>
+    <label></label>
+    <select class="browser-default">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">5 Stars</option>
+      <option value="2">4 Stars</option>
+      <option value="3">3 Stars</option>
+      <option value="4">2 Stars</option>
+      <option value="5">1 Stars</option>
+    </select>
+    </div>
+
+    <div id="rightbox">
+      <a class='dropdown-trigger btn' >ZIP Code</a>
+    <form action=" ">
+      <label for="quantity"></label>
+      <input type="number" id="quantity" name="quantity" min="1" max="">
+      <input type="submit">
+    </form>
+  </div>
+  <!-- Input Select Structure Finish -->
+</section>
+<!-- User Input Section  Finish--> 
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Select by type of brewery</h5>
+
+            <p class="light">.
+               <ul>
+              <li>Micro - Most craft breweries. For example, Samual Adams is still considered a micro brewery.</li>
+              <li>Nano - An extremely small brewery which typically only distributes locally.</li>
+              <li>Regional - A regional location of an expanded brewery. Ex. Sierra Nevada’s Asheville, NC location.</li>
+              <li>Brewpub - A beer-focused restaurant or restaurant/bar with a brewery on-premise.</li>
+              <li>Large - A very large brewery. Likely not for visitors. Ex. Miller-Coors. (deprecated)</li>
+              <li>Planning - A brewery in planning or not yet opened to the public.</li>
+              <li>Bar - A bar. No brewery equipment on premise. (deprecated)</li>
+              <li>Contract - A brewery that uses another brewery’s equipment.</li>
+              <li>Proprietor - Similar to contract brewing but refers more to a brewery incubator.</li>
+              <li>Closed - A location which has been closed. </li>
+                </ul>
+                </p>
+            </div>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Customer Experience Raiting</h5>
+
+            <p class="light">Shares feedback from customers, experience of service for each brewery and the rating for that experiencence.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Maps and Location</h5>
+
+            <p class="light">Application will provide the map to get to the selected brewery.</p>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-            
-  <script src="./assets/js/homepage.js"></script>
-</body>
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Please share your suggestions with the group, we would like to here your opinions and your suggestions;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end brewery locator application</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Project Information</h5>
+          <p class="grey-text text-lighten-4">We are the Team-6 Coding Bootc Camp working on the Brewery Application Project 1.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Creators</h5>
+          <ul>
+            <li><a class="white-text" href="ansonshendrick@gmail.com">Anson Hendrick</a></li>
+            <li><a class="white-text" href="#!">Reno Raju</a></li>
+            <li><a class="white-text" href="#!">Mauricio Gomez</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="mailto: ansonshendrick@gmail.com"> ansonshendrick@gmail.com</a></li>
+            <li><a class="white-text" href="mailto: rajureno@outlook.com"> rajureno@outlook.com</a></li>
+            <li><a class="white-text" href="mailto: gomezb_mauricio@hotmail.com"> gomezb_mauricio@hotmail.com</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+    
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
