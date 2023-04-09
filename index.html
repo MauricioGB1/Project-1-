@@ -53,18 +53,14 @@
   <div id="leftbox">
     <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Brewery Type</a>
     <label></label>
-    <select class="browser-default">
+    <select id= "brewery-types" class="browser-default">
       <option value="" disabled selected>Choose your option</option>
-      <option value="1">Micro-brewery</option>
-      <option value="2">Nano-brewery</option>
-      <option value="3">Regional-brewery</option>
-      <option value="4">Brewpub</option>
-      <option value="5">Large-brewery</option>
-      <option value="6">Planning-brewery</option>
-      <option value="7">Bar</option>
-      <option value="8">Contract-brewery</option>
-      <option value="9">Proprietor-brewery</option>
-      <option value="10">Closed-brewery</option>
+      <option value="micro">Micro-brewery</option>
+      <option value="nano">Nano-brewery</option>
+      <option value="regional">Regional-brewery</option>
+      <option value="brewpub">Brewpub</option>
+      <option value="bar">Bar</option>
+      <option value="Contract">Contract</option> 
     </select>
     </div>
     <!-- Input Select Structure Finish -->
@@ -120,6 +116,7 @@
               <li>Proprietor - Similar to contract brewing but refers more to a brewery incubator.</li>
               <li>Closed - A location which has been closed. </li>
                 </ul>
+              <div class="nearest-breweries"></div>
                 </p>
             </div>
         </div>
@@ -222,6 +219,9 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1mqGXUYWBFH4huc7LXT9mCTr-GKdDlgo&libraries=places">
+  </script>
 
   </body>
 </html>
