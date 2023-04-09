@@ -11,10 +11,14 @@ async function findNearestBars() {
 	const zipcodeInput = document.getElementById("zipcode-input");
 	const by_postal = zipcodeInput.value;
 	
-  const breweryTypeInput = document.getElementById("brewery-types");
+  	const breweryTypeInput = document.getElementById("brewery-types");
 	const breweryType = breweryTypeInput.value;
-	
-    const url = `https://api.openbrewerydb.org/v1/breweries?by_postal=${by_postal}&by_type=${breweryType}&per_page=10`;
+
+	let url = `https://api.openbrewerydb.org/v1/breweries?by_postal=${by_postal}&per_page=10`;
+  
+  	if (breweryType !== "") {
+   		 url = `https://api.openbrewerydb.org/v1/breweries?by_postal=${by_postal}&by_type=${breweryType}&per_page=10`;
+ 	 }
 	
     const response = await fetch(url);
 	const data = await response.json();
