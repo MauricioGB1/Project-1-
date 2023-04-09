@@ -22,19 +22,24 @@ async function findNearestBars() {
 	
     const response = await fetch(url);
 	const data = await response.json();
+  console.log(data)
+   
 	    
     if (data.length === 0) {
-		console.log("No ", breweryTypeInput, "found in this area.");
+		alert("No ", breweryTypeInput, "found in this area.");
 		return;
 			}
 		
     const nearestBars = data.slice(0, 5);
 	nearestBars.forEach(bar => {
 		console.log(bar);
+    const webPage = bar.website_url
+
 		const x = bar.street;
 		const y = bar.city;
 		const z = bar.state
 		const address= x + y + z;
+    
 		console.log(address); 
 	
 		const geocoder = new google.maps.Geocoder();
@@ -58,14 +63,41 @@ async function findNearestBars() {
 			if (response.length > 0) {
 			  const rating = response[0].rating;
 			  console.log(response[0].rating);
-			  const breweryDiv = document.createElement("div");
-			  breweryDiv.innerHTML = `<h2>${bar.name}</h2><p>Rating: ${rating}</p>`;
+			  const breweryDiv = document.createElement("table");
+        const breweryInfo = document.createElement("tbody");
+        
+        var row = document.createElement("tr");
+        var cell = document.createElement("td");
+
+			  breweryDiv.innerHTML = `
+        <table>
+    <thead>
+      <tr>
+          <th>Bar Name</th>
+          <th>Rating</th>
+          <th>Type</th>
+          <th>Website</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>${bar.name} </td>
+        <td>${rating}/5 </td>
+        <td>${breweryType}</td>
+        <td>${webPage}</td>
+      </tr>
+     
+     
+    </tbody>
+  </table>`;
+        row.appendChild(cell);
 			  document.body.appendChild(breweryDiv);
 			} else {
-			  console.log(`Unable to find rating for ${bar.name}`);
+			  alert(`Unable to find rating for ${bar.name}`);
 			}
 		  } else {
-			console.log(`Geocode was not successful for ${address}`);
+			  alert(`Geocode was not successful for ${address}`);
 		  }
 		});
 	  });
