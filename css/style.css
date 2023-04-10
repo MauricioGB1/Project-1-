@@ -48,6 +48,22 @@ padding-left: 15%;
   width:30%;
   height:150px;
 }
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#display-table{
+  padding-top: 150px;
+}
+
+#M7 {
+display: none
+}
+
+.results {
+  display: none
+}
+
 
 /*
 .clearfix::after {
