@@ -17,7 +17,7 @@
         
       <a id="logo-container" href="./images/logo.png" class="brand-logo">Brewery Locator App</a>
         <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#team">Project Team - Information</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -36,7 +36,7 @@
           <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
         <div class="row center">
-          <a href="https://www.1840brewing.com/" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Menu Selector</a>
+          <a href="https://www.1840brewing.com/" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Our Recommendation</a>
         </div>
         <br><br>
 
@@ -84,7 +84,7 @@
     <form action=" ">
       <label for="quantity"></label>
       <input type="text" id="zipcode-input" placeholder="Enter your zipcode">
-      <button onclick="findNearestBars()">Submit</button>
+      <button id="hide" onclick="findNearestBars()">Submit</button>
     </form>
   </div>
   <!-- Input Select Structure Finish -->
@@ -92,8 +92,45 @@
 <!-- User Input Section  Finish--> 
 
 
+<!-- Mauricio 1--> 
+<section id="display-table"> 
+ <!-- <button id="">Hide</button>--> 
+  <button id="show" class="btn-large waves-effect waves-light teal lighten-1">New Search</button>
+  
+  
+  <!--   MAURICIO START 1   -->
+  
+  <article class="results">
+  
+  <div class="divider"></div>
+  <div class="section">
+    <h5>Brewery Search Results</h5>
+    <div class="card-panel teal lighten-2"></div>
+  </div>
+    
+  <table class="z-depth-3">
+    <thead>
+      <tr class="card-panel teal lighten-4" >
+          <th>Brewery Name</th>
+          <th>Rating</th>
+          <th>Type</th>
+          <th>Website</th>
+          <th>Address</th>
+      </tr>
+    </thead>
+ 
+  </table>
+  
+  </article>
+  
+  </section>
+  
+  <!--   MAURICIO FINISH 2   -->
+
+
 
   <div class="container">
+                                     <div class="results-container">
     <div class="section">
 
       <!--   Icon Section   -->
@@ -142,6 +179,9 @@
 
     </div>
   </div>
+                         </div>
+
+
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -151,17 +191,17 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="./assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax" id="M1"><img src="./assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+  <div class="container" id="M5">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Please share your suggestions with the group, we would like to here your opinions and your suggestions;</p>
+          <h4>Contact Us, We are Team 6 </h4>
+          <p class="left-align light">Please share your suggestions with the group, we would like to here your opinions and your ideas to keep improving thsi application</p>
         </div>
       </div>
 
@@ -169,32 +209,46 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="M6">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end brewery locator application</h5>
+          <h5 class="header col s12 dark">A modern responsive front-end brewery locator application, this application is designed for exquisite taste on beers</h5>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="./assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
+
+  <div class="parallax-container valign-wrapper" id="M7">
+    <div class="section no-pad-bot">
+      <div class="container" >
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end brewery locator application</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax" ><img src="./assets/images/image6.jpg" alt="Beers" height="700"></div>
+  </div>
+
+
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Project Information</h5>
-          <p class="grey-text text-lighten-4">We are the Team-6 Coding Bootc Camp working on the Brewery Application Project 1.</p>
+          <h5 class="white-text">Project Team Information</h5>
+          <p class="grey-text text-lighten-4">We are the Team 6 Rice University, Coding Boot-Camp creators of the Brewery Application Project.</p>
 
 
         </div>
-        <div class="col l3 s12">
+        <div class="col l3 s12" id="team">
           <h5 class="white-text">Creators</h5>
           <ul>
-            <li><a class="white-text" href="ansonshendrick@gmail.com">Anson Hendrick</a></li>
-            <li><a class="white-text" href="#!">Reno Raju</a></li>
-            <li><a class="white-text" href="#!">Mauricio Gomez</a></li>
+            <li><a class="white-text" href="https://github.com/MauricioGB1/Project-1-Brewery-locator-and-rating-service-website-Group-6" target="_blank">Anson Hendrick</a></li>
+            <li><a class="white-text" href="https://github.com/MauricioGB1/Project-1-Brewery-locator-and-rating-service-website-Group-6" target="_blank">Reno Raju</a></li>
+            <li><a class="white-text" href="https://github.com/MauricioGB1" target="_blank">Mauricio Gomez</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -206,24 +260,23 @@
             
           </ul>
         </div>
-        
       </div>
     </div>
-    
     <div class="footer-copyright">
       <div class="container">
     
       </div>
     </div>
   </footer>
-  
-  
+
+  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1mqGXUYWBFH4huc7LXT9mCTr-GKdDlgo&libraries=places">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
   </body>
 </html>

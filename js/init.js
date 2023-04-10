@@ -69,6 +69,8 @@ async function findNearestBars() {
         var row = document.createElement("tr");
         var cell = document.createElement("td");
 
+
+
 			  breweryDiv.innerHTML = `
         <table class = "table">
     <thead class ="table">
@@ -86,13 +88,22 @@ async function findNearestBars() {
         <td>${rating}/5 </td>
         <td>${breweryType}</td>
         <td>${webPage}</td>
+        <td>${address}</td>
       </tr>
-     
-     
+            
     </tbody>
   </table>`;
+
+//  $("#hide").click(function(){
+//    $("tbody ").after("breweryDiv");
+//  });
+
+
+
+
         row.appendChild(cell);
 			  document.body.appendChild(breweryDiv);
+        document.getElementById("display-table").appendChild(breweryDiv);
 			} else {
 			  alert(`Unable to find rating for ${bar.name}`);
 			}
@@ -103,6 +114,44 @@ async function findNearestBars() {
 	  });
 	}
 	
+        //Mauricio//
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $(".results-container").hide();
+            $("#M1").hide();
+            $("#M3").show();
+            $("#M4").hide();
+            $("#M5").hide();
+            $("#M6").hide();
+            $("#M7").show();
+            $(".results").show();
+          });
+        });
+      
+        $(document).ready(function(){
+          $("#show").click(function(){
+            $(".results-container").show();
+            $("#M1").show();
+            $("#M3").hide();
+            $("#M4").show();
+            $("#M5").show();
+            $("#M6").show();
+            $("#M7").hide();
+            $(".results").hide();
+          });
+        });
+      
+      // Function to clear answers selected
+
+
+  $('#show').on('click', function(){
+    localStorage.clear()
+    location.reload()
+    });
+
+      //Mauricio//
+  
+
 		document.querySelector('form').addEventListener('submit', function(event) {
 			event.preventDefault(); 
 			findNearestBars();
