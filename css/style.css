@@ -99,9 +99,11 @@ footer.page-footer {
   margin: 0;
 }
 
-.first-row {
-  padding: 300px
 
+.table{
+
+display: flex;
+justify-content: space-evenly;
 
 
 
