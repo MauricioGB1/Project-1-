@@ -16,9 +16,9 @@ Application uses external API to collect and display the Breweries data.
 ## Team Developers
 
 ​Project 1 - Team 6
-- 1 Anson Hendrick,     ​ansonshendrick@gmail.com
-- 2 Reno Raju,          rajureno@outlook.com  
-- 3 Mauricio Gomez,     gomezb_mauricio@hotmail.com
+- Anson Hendrick,     ​ansonshendrick@gmail.com
+- Reno Raju,          rajureno@outlook.com  
+- Mauricio Gomez,     gomezb_mauricio@hotmail.com
 
 
 ## Table of Contents
@@ -61,7 +61,7 @@ User can read the explanation for each of the Brewery types.
 
 ![alt text](./assets/images/App2.jpg)
 
-Bottom Section of the Wen App with the Creators and additional links information.
+Bottom Section of the Web App with the Creators and additional links information.
 
 ![alt text](./assets/images/App3.jpg)
 
