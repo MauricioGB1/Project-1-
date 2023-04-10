@@ -26,7 +26,7 @@ async function findNearestBars() {
    
 	    
     if (data.length === 0) {
-		alert("No ", breweryTypeInput, "found in this area.");
+		alert("No brewery found in this area.");
 		return;
 			}
 		
