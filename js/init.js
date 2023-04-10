@@ -65,13 +65,13 @@ async function findNearestBars() {
 			  console.log(response[0].rating);
 			  const breweryDiv = document.createElement("table");
         const breweryInfo = document.createElement("tbody");
-        
+        var header = document.createElement("th")
         var row = document.createElement("tr");
         var cell = document.createElement("td");
 
 			  breweryDiv.innerHTML = `
-        <table>
-    <thead>
+        <table class = "table">
+    <thead class ="table">
       <tr>
           <th>Bar Name</th>
           <th>Rating</th>
@@ -80,7 +80,7 @@ async function findNearestBars() {
       </tr>
     </thead>
 
-    <tbody>
+    <tbody class ="table">
       <tr>
         <td>${bar.name} </td>
         <td>${rating}/5 </td>
